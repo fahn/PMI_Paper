@@ -1,0 +1,8 @@
+services:
+    pmi:
+        image: texlive/texlive:latest
+        working_dir: /workdir
+        command: "xelatex -interaction=nonstopmode  -output-directory=/out ${MY_FILE}"
+        volumes:
+            - ./:/workdir/
+            - ./out/:/out/
