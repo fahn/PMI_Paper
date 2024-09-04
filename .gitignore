@@ -1,0 +1,14 @@
+expose.synctex.gz
+expose.synctex.gz
+expose.pdf
+expose.pdf
+expose.log
+*.log
+*.aux
+*.log
+400_Meilensteine.aux
+*.aux
+expose.pdf
+*.toc
+expose.synctex.gz
+*.toc
