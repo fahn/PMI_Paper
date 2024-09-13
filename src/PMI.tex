@@ -1,0 +1,81 @@
+% !TEX encoding = UTF-8 Unicode
+
+%
+%    PMI - Projektmanagement-Informationssystem
+%    Seminararbeit
+%    author: Stefan Metzner
+%    Version: 1.0.0
+%    created: 2024-09-13
+\documentclass[
+    12pt,
+    titlepage,
+    ngerman, % für Umlaute, Silbentrennung etc.
+    a4paper, % Papierformat
+    oneside, % einseitiges Dokument
+    index=totoc, % Index im Inhaltsverzeichnis aufführen
+]{article}
+
+
+\usepackage[a4paper,lmargin={4cm},rmargin={2cm},tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
+
+% UTF8 und T1 Fontencoding -----------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[ngerman]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{color}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+
+\usepackage{lipsum} % Blindtext-Paket
+
+% Titelseiten-Elemente
+\title{ __TITLE__ }
+%\subtitle{-- SUBTITLE --}
+\author{Stefan Metzner}
+
+\date{\today}
+
+
+
+
+
+\begin{document}
+
+    \begin{titlepage}
+        \title{Softwareentwicklung mit Hilfe von PMI und Scrum}
+        \date{13.09.2024}
+        \author{Stefan Metzner}
+        \maketitle
+    \end{titlepage}
+    
+    
+    \newpage
+    
+    \tableofcontents
+    \clearpage
+    
+    % Einführung
+    \include{sections/000_Einfuehrung}
+
+    % Projektübersicht
+    \include{sections/020_Auftrag}
+
+    % Projektorganisation
+    \include{sections/050_Projektorganisation}
+
+    % Projektstrukturplan
+    \include{sections/060_Projektplanung}
+
+    % Projektphasen
+    \include{sections/070_Projektkommunikation}
+
+    % Lessons Learned
+    \include{sections/090_LessonsLearned}
+    
+
+\end{document}

@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Docker Compose",
+            "type": "shell",
+            "command": "make pmi",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Startet den Docker-Container mit docker-compose up"
+        }
+    ]
+}
