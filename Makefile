@@ -41,7 +41,7 @@ clean:
 run:
 	@if [ -z "$(FILE)" ]; then \
 		echo "Fehler: Bitte geben Sie eine Datei mit FILE=FILENAME an."; \
-	elif [ ! -f "$(FILE)" ]; then \
+	elif [ ! -f "./src/$(FILE)" ]; then \
 		echo "Fehler: Die Datei $(FILE) existiert nicht."; \
 	else \
 		echo -n "Compiling ... "; \
@@ -67,4 +67,4 @@ copy:
 
 
 up:
-	MY_FILE='' docker compose run -d latex "/bin/bash -c 'sleep 600'"
+	MY_FILE='' docker compose run -d pmi "/bin/bash -c 'sleep 600'"

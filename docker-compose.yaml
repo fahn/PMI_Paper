@@ -2,7 +2,10 @@ services:
     pmi:
         image: texlive/texlive:latest
         working_dir: /workdir
-        command: "xelatex -interaction=nonstopmode  -output-directory=/out ${MY_FILE}"
+        #user: 1000:1000
+        #command: "xelatex -interaction=nonstopmode  -output-directory=/out ${MY_FILE}"
+        command: pdflatex ${MY_FILE}
+        #command: id -u
         volumes:
-            - ./:/workdir/
+            - ./src/:/workdir/
             - ./out/:/out/
